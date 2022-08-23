@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Creps, Merl</Authors>
+        <Company>SteelDynamics, Inc.</Company>
+        <Description>Http Library</Description>
+        <Copyright>SteelDynamics, Inc</Copyright>
+        <RepositoryUrl>https://github.com/steeldynamics/SdiHttpLib</RepositoryUrl>
+        <RepositoryType>C#</RepositoryType>
+        <Version>2.0.0</Version>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <PackageVersion>$([System.DateTime]::Now.ToString("yyyy.MM.dd.HHmmss"))</PackageVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="NLog" Version="5.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="SDIIcon.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+</Project>
